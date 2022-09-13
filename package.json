@@ -1,0 +1,25 @@
+{
+  "name": "es-build-test",
+  "version": "1.0.0",
+  "description": "https://esbuild.github.io/getting-started/#install-esbuild",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "esbuild --bundle src/index.js --outfile=www/main.js",
+      "start": "npm run build -- --servedir=www",
+      "watch": "npm run build -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "7.19.0",
+    "esbuild": "0.15.7",
+    "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "compress-images": "2.0.5",
+    "framer-motion": "7.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
